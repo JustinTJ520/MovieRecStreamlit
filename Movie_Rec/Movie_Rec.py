@@ -6,15 +6,7 @@
 import pandas as pd
 import re
 from sklearn.metrics.pairwise import cosine_similarity
-#import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
-#import ipywidgets as widgets
-#from IPython.display import display
-#import tkinter as tk
-#from tkinter import *
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import seaborn as sns
 import streamlit as st
 
 
