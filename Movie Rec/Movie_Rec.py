@@ -74,9 +74,9 @@ def find_similar_movies(movie_id):
     return recommendations.sort_values("score", ascending=False).head(10)
 
 
-movies = pd.read_csv("movies.csv")
-ratings = pd.read_csv("ratings.csv")
-tags = pd.read_csv("tags.csv")
+movies = pd.read_csv("Movie Rec/movies.csv")
+ratings = pd.read_csv("Movie Rec/ratings.csv")
+tags = pd.read_csv("Movie Rec/tags.csv")
 
 movie_tags = tags.groupby("movieId")["tag"].apply(lambda x: " ".join(x)).reset_index()
 
